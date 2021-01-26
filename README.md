@@ -1,7 +1,7 @@
-# THE PONG GAME
-The old the Pong game from Atari using GUI from Turtle graphics. 
+# THE TURTLE CROSSING GAME
+
 - The code was written to use documentations https://docs.python.org/3/library/turtle.html
-- In this case, I was learning animation and OOP.
+- In this case, I was learning GUI, animation and OOP.
 
 ## Keys 
 - Control the paddle by using:
