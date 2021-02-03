@@ -21,6 +21,13 @@ while game_is_on:
     screen.update()
     car_manager.create_car()
     car_manager.move()
+    # Detect collision with the car
+    for car in car_manager.all_cars:
+        if car.xcor() == -320: # deleting unused cars
+            car_manager.all_cars.remove(car)
+        if car.distance(player) < 20:
+            game_is_on = False
+
     if player.ycor() == 280:
         player.start_position()
 
