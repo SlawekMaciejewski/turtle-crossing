@@ -33,7 +33,7 @@ while game_is_on:
             scoreboard.game_over()
             game_is_on = False
 
-    if player.ycor() == 280:
+    if player.ycor() >= 280:
         player.start_position()
         scoreboard.increase_level()
 
