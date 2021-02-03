@@ -17,7 +17,7 @@ screen.onkeypress(player.move, "Up")
 
 game_is_on = True
 while game_is_on:
-    time.sleep(0.1)
+    time.sleep(player.move_speed)
     screen.update()
     car_manager.create_car()
     car_manager.move()
