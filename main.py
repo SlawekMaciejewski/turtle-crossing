@@ -33,8 +33,10 @@ while game_is_on:
             scoreboard.game_over()
             game_is_on = False
 
-    if player.ycor() >= 280:
+    # Detect successful crossing
+    if player.ycor() > 280:
         player.start_position()
+        car_manager.move_speed_up()
         scoreboard.increase_level()
 
 screen.exitonclick()
